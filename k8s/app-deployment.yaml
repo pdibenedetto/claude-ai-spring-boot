@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: claude-ai-spring-boot-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: claude-ai-spring-boot
+  template:
+    metadata:
+      labels:
+        app: claude-ai-spring-boot
+    spec:
+      containers:
+      - name: claude-ai-spring-boot
+        image: claude-ai-spring-boot
+        ports:
+        - containerPort: 8080
+        env:
+        - name: SPRING_DATASOURCE_URL
+          value: jdbc:postgresql://postgres-service:5432/claudeai_db
+        - name: SPRING_DATASOURCE_USERNAME
+          value: postgres
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: password
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: claude-ai-spring-boot-service
+spec:
+  selector:
+    app: claude-ai-spring-boot
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: LoadBalancer
