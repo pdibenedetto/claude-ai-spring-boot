@@ -2,6 +2,17 @@
 
 This is a Spring Boot application that exposes a REST API with JWT and OAuth2 security, connecting to a PostgreSQL database.
 
+## Prompt
+
+```text
+Create the application that exposes a REST API and connects to a PostgreSQL database in the current directory.
+The application should have a Person entity with an id and typical fields for each person.
+All REST endpoints should be protected with JWT and OAuth2.
+The codebase should use Skaffold to deploy on Kubernetes.
+Don’t create a plan.
+Don’t ask for confirmation, just continue.
+```
+
 ## Features
 
 - REST API endpoints for Person entities
