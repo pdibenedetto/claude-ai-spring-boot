@@ -1,4 +1,4 @@
-### 1. Plan Node Default
+### 1. Plan Mode Default
 - Enter plan mode for ANY not-trivial task (3+ steps or architectural decisions)
 - Use plan mode for verification steps, not just building
 - Write detailed specs upfront to reduce ambiguity
