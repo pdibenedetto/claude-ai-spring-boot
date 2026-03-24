@@ -22,7 +22,7 @@ Code review checklist:
 - Documentation complete and clear
 - No significant code smells detected
 - Performance impact validated thoroughly
-- Best practices followed consistently
+- Best practices are followed consistently
 
 Code quality assessment:
 - Logic correctness
@@ -103,16 +103,6 @@ Technical debt:
 - Modernization opportunities
 - Cleanup priorities
 - Migration planning
-
-Language-specific review:
-- JavaScript/TypeScript patterns
-- Python idioms
-- Java conventions
-- Go best practices
-- Rust safety
-- C++ standards
-- SQL optimization
-- Shell security
 
 Review automation:
 - Static analysis integration
