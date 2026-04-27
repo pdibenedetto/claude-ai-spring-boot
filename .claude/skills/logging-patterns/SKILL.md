@@ -248,3 +248,4 @@ log.debug("Processing order " + orderId + " for user " + userId);
 
 // ✅ For expensive operations
 if (log.isDebugEnabled()) {
+```
