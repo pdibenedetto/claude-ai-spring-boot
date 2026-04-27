@@ -198,3 +198,4 @@ public class OrderService {
         Order order = orderRepository.findById(id).orElseThrow();
         // Access within transaction
         int itemCount = order.getItems().size();
+```
